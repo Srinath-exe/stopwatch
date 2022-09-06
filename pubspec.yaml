@@ -36,6 +36,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  lottie: ^1.4.2
+  zoom_tap_animation: ^1.1.0
+  flutter_launcher_icons: ^0.10.0
 
 dev_dependencies:
   flutter_test:
@@ -50,7 +53,10 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -60,9 +66,10 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/
+    - assets/lottie/
+    - assets/fonts/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -75,13 +82,26 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
+  fonts:
+    - family: K2D
+      fonts:
+        - asset : "assets/fonts/K2D/K2D-Italic.ttf"
+        - asset : "assets/fonts/K2D/K2D-Light.ttf"
+        - asset : "assets/fonts/K2D/K2D-LightItalic.ttf"
+        - asset : "assets/fonts/K2D/K2D-Medium.ttf"
+        - asset : "assets/fonts/K2D/K2D-MediumItalic.ttf"
+        - asset : "assets/fonts/K2D/K2D-Regular.ttf"
+        - asset : "assets/fonts/K2D/K2D-SemiBold.ttf"
+        - asset : "assets/fonts/K2D/K2D-SemiBoldItalic.ttf"
+        - asset : "assets/fonts/K2D/K2D-Thin.ttf"
+        - asset : "assets/fonts/K2D/K2D-ThinItalic.ttf"
+        - asset : "assets/fonts/K2D/OFL.txt"
+        - asset : "assets/fonts/K2D/K2D-Bold.ttf"
+        - asset : "assets/fonts/K2D/K2D-BoldItalic.ttf"
+        - asset : "assets/fonts/K2D/K2D-ExtraBold.ttf"
+        - asset : "assets/fonts/K2D/K2D-ExtraBoldItalic.ttf"
+        - asset : "assets/fonts/K2D/K2D-ExtraLight.ttf"
+        - asset : "assets/fonts/K2D/K2D-ExtraLightItalic.ttf"    
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
